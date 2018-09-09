@@ -6,8 +6,7 @@
   "scripts": {
     "config": "node-pre-gyp configure",
     "build": "node-pre-gyp rebuild",
-    "preinstall": "npm install node-pre-gyp",
-    "postinstall": "node-pre-gyp install --fallback-to-build",
+    "install": "node-pre-gyp install --fallback-to-build",
     "test": "tape test/start.js | tap-spec",
     "buildtest": "set PYTHON=C:\\Users\\nhuba\\.windows-build-tools\\python27\\python.exe&& npm run config && npm run build && npm test",
     "publish-binary": "git commit --allow-empty -m \"[publish binary]\""
@@ -44,7 +43,7 @@
   ],
   "dependencies": {
     "nan": "2.8.0",
-    "node-pre-gyp": "^0.6.38"
+    "node-pre-gyp": "^0.6.39"
   },
   "devDependencies": {
     "node-gyp": "^3.6.2",
